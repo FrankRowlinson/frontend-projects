@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.header{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* no decoration for any links */
+.menu__link, .menu__logo, .menu__signup, .menu__login {
+  text-decoration: none;
+}
+/* menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  font-size: 16px;
+  box-shadow: 0px 4px 7px rgba(129, 129, 129, 0.25);
+  background: #FFFFFF;
+}
+
+.menu__ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu__li {
+  margin: 0 20px 0 40px;
+}
+
+.menu__link {
+  color: black;
+}
+
+.menu__link:hover {
+  color: #05A88D;
+}
+
+/* logo */
+.menu__logo {
+  margin: 35px auto;
+  font-size: 24px;
+  font-weight: 700;
+  color: #05A88D;
+}
+
+/* buttons */
+
+.menu__signup, .menu__login {
+  display: inline-block;
+  color: #05A88D;
+  margin-right: 48px;
+  padding: 13px 22px;
+  border: 1px solid transparent;
+}
+
+.menu__signup:hover, .menu__login:hover {
+  box-sizing: border-box;
+  border: #05A88D 1px solid;
+  border-radius: 3px;
+}

@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+/* header */
+.navbar {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 36px;
+  color: black;
+  margin-left: 80px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin-right: 80px;
+}
+
+.menu__link {
+  font-weight: 300;
+  font-size: 24px;
+  margin-left: 46px;
+  color: black;
+}
+
+.menu__link:hover {
+  color: #999999;
+}
+
+/* home */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://source.unsplash.com/vSuQJKZkt4U/1920x1080");
+  background-size: cover;
+  height: 622px;
+}
+
+.home__text {
+  font-weight: 700;
+  font-size: 60px;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+/* little bar under text */
+.home__text::after {
+  position: absolute;
+  bottom: -15px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 90px;
+  height: 10px;
+  content: "";
+  background: #817070;
+}
+
+/* story */
+/* header and title classes used both for blog and story blocks */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding: 60px;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.story__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 40px 80px;
+}
+
+.story__image {
+  max-height: 400px;
+  max-width: 600px;
+  margin-right: 40px;
+}
+/* all images inherit size of parent container */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.story__text {
+  max-width: 600px;
+  margin-right: 40px;
+  font-weight: 300;
+  font-size: 20px;
+}
+/* blog */
+.blog {
+  background-color: #efefef;
+}
+
+.blog__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+/* blog cards */
+.blog__card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  margin: 0 35px;
+}
+.card__title {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.card__image {
+  height: 216px;
+  width: 325px;
+  margin-bottom: 24px;
+}
+
+.card__text {
+  width: 325px;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.card__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* contact */
+.contact,
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+    background-color: #817070;
+    padding: 60px 0;
+}
+
+.form__label {
+  font-weight: 500;
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.form__input {
+  background: #817070;
+  color: white;
+  border: 3px solid #ffffff;
+  outline: none;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  width: 300px;
+  height: 55px;
+  margin-bottom: 28px;
+
+}
+
+/* to change opacity of placeholder without changing input field */
+.form__input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.form__button {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: #817070;
+    background-color: white;
+    padding: 13px 35px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: 0;
+
+}
+
+.form__button:hover {
+    box-shadow: 2px 2px black;
+}
+
+/* footer */
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+}
+
+.footer__copyright {
+    margin-top: 14px;
+    font-weight: 300;
+    font-size: 20px;
+}
